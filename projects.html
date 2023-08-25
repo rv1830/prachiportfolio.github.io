@@ -1,0 +1,184 @@
+<html>
+<had><title>Responsive Table Design - Easy Tutorials</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</had>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    background:url(img.jpg);
+}
+.table-box
+{
+    margin: 70px auto;
+    background: whitesmoke;
+}
+
+.table-row{
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    background: transparent;
+    padding: 12px 0;
+    color: black;
+    font-size: 20px;
+    box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
+}
+.table-head{
+    background: #1111b7;
+    box-shadow: none;
+    color: #fff;
+    font-weight: 600;
+}
+.table-head .table-cell{
+    border-right: none;
+}
+.table-cell{
+    display: table-cell;
+    font-style: italic;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #c91313;
+    vertical-align: middle;
+}
+.first-cell{
+    text-align: left;
+    padding-left: 10px;
+}
+.last-cell{
+    border-right: none;
+}
+.last-cell a:hover{
+    color: black;
+    size: 1.1rem;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.buttons{
+    
+    /* display: block;
+    
+    margin-left:  500px;
+    margin-right:500px;
+    
+    border:none;
+    background-color: #4f4fcc;
+    padding:14px 28px;
+    font-size: 50px;
+    cursor:pointer;
+    text-align: center; */
+    margin-top: 50px;
+    margin-left:  400px;
+    margin-right:500px;
+    background-color:#1111b7;
+    color: white;
+    text-decoration: none;
+    /* border: 2px solid transparent; */
+     font-weight:bold ;
+     text-align: center;
+     font-size:20px;
+    padding: 14px 28px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+.buttons:hover{
+    background:white;
+    border:2px solid #1111b7;
+    cursor:pointer;
+}
+span{
+    color: black;
+}
+.span a:hover{
+    color: black;
+    size: 1.1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .table-row {
+    font-size: 11px;
+  }
+ 
+</style>
+<body>
+<div class="table-box">
+        <div class="table-row table-head">
+            <div class="table-cell first-cell">
+                <p>Project Type</p>
+            </div>
+            <div class="table-cell">
+                <p>Technology Used</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>View work</p>
+            </div> 
+        </div>
+
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>Web Desigining</p>
+            </div>
+            <div class="table-cell">
+                <p>Canva/Figma</p>
+            </div>
+            <div class="table-cell last-cell">
+                <a href=""><span><u>Click here</u></span></a>
+            </div>   
+        </div>
+
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>Web Development</p>
+            </div>
+            <div class="table-cell">
+                <p>HTML/CSS/JS</p>
+            </div>
+            <div class="table-cell last-cell">
+                <a href=""><span><u>Click Here</u></span></a>
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>Video Editing</p>
+            </div>
+            <div class="table-cell">
+                <p>Canva</p>
+            </div>
+            <div class="table-cell last-cell">
+                <a href=""><span><u>Click Here</u></span></a>
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>Content Writing</p>
+            </div>
+            <div class="table-cell">
+                <p>MS Word</p>
+            </div>
+            <div class="table-cell last-cell">
+                <a href=""><span><u>Click Here</u></span></a>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn"><a href="index.html"><b><span>Back To HOME</span></b></a></button>
+           
+        </div>
+       
+
+       
+</div> 
+</p>  
+</body>
+</html>

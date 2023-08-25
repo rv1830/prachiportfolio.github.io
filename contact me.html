@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,800&display=swap" rel="stylesheet">
+    <script>
+        function showSuccessMessage() {
+            document.getElementById("successMessage").style.display = "block";
+            alert("Your form has been submitted successfully");
+        }
+    </script>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'poppins',sans-serif;
+        }
+        body {
+            background-color: rgb(245, 245, 245);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            /* background-image: url(rv.jpg); */
+        }
+        .body h1{
+         text-align: center;
+        }
+        
+
+        .contact {
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          background-image: url(rv.jpg);
+         background-size: cover;
+        }
+        .contact .content{
+            max-width: 800px;
+            text-align: center;
+
+        }
+        .contact .content h2{
+            font-size: 27px; 
+            font-weight: 500;
+            color: black;
+        }
+        .contact .content p{
+            
+            font-weight: 300;
+            color: black;
+        }
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .container .contactInfo {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container .contactInfo .box{
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+
+        }
+        .container .contactInfo .box .icon {
+min-width: 60px;
+height: 60px;
+background: rgb(8, 8, 8);
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+font-size: 22px;
+
+        }
+        .container .contactInfo .box .text{
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: black;
+            flex-direction: column;
+            font-weight: 300;
+        }
+        .container .contactInfo .box .text h3{
+            font-weight: 500;
+            color:rgb(24, 5, 85) ;
+        }
+        .contactForm {
+            width: 80%;
+            padding: 40px;
+            background: rgb(199, 199, 199);
+        }
+        .contactForm h2 {
+font-size: 30px;
+color: black;
+font-weight: 500;
+        }
+        .contactForm .inputBox{
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+
+        }
+        .contactForm .inputBox input,
+        .contactForm .inputBox textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+        }
+        .contactForm .inputBox span
+        {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+pointer-events: none;
+transition: 0.5s;
+color: #666;
+        }
+        .contactForm .inputBox input:focus ~ span,
+        .contactForm .inputBox input:valid ~ span,
+        .contactForm .inputBox textarea:focus ~ span,
+        .contactForm .inputBox textarea:valid ~ span 
+        {
+            color: #e91e63;
+            font-size: 7px;
+            transform: translate(~20px);
+        }
+        .contactForm .inputBox input[type="submit"] :hover{
+        color: rgb(41, 41, 228);
+            font-size: 0.9rem;
+        }
+        .contactForm .inputBox input[type="submit"] {
+width: 100px;
+background: blue;
+color: #fff;
+border: none;
+cursor: pointer;
+padding: 10px;
+font-size: 18px;
+
+@media (max-width: 991px)
+{
+    .contact
+    {padding: 50px;}
+    .container{
+        flex-direction: column;   
+    }
+    .container .contactInfo
+    {margin-bottom: 40px;}
+    .container .contactInfo,
+    .contact{
+        width: 100%;
+    }
+}
+h1{
+
+text-align: center;
+
+}
+        
+    </style>
+</head>
+<body>
+    <h1 style =background-color:black;>Submit Form</h1>
+    <form id="myForm" onsubmit="showSuccessMessage(); return false;">
+    <section class="contact">
+        <div class="content">
+            <h2><b>Contact Us</b></h2>
+            <p> Get in touch with us. Fill the form.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="text">
+                    <h3><b>Address </b></h3>
+                    <p> New Delhi,
+                         India </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+                <div class="text">
+                    <h3><b> Phone Number</b> </h3>
+                    <p> 7982991106 </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="text">
+                    <h3><b> Email </b> </h3>
+                    <p> kapoorpkay12@gmail.com </p>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                    <span> Full Name</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name=""  required="required">
+                <span> Email </span></div>
+                <div class="inputBox">
+                    <textarea required="required"></textarea>
+                <span> Write Us </span></div>
+                <div class="inputBox">
+                    <input type="submit" name="" value="Send!">
+                    <!-- <script>("YOUR FORM HAS BEEN SUBMITTED");</script> -->
+                    
+                </form>
+            </div>
+        </div>
+        <div id="successMessage" style="display: none;">
+        <p>Your form has been submitted successfully!<br>
+        <a href="/index.html">Back to home</a></p>
+    </div>
+    </section>
+    
+</body>
+</html>
